@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	[x-cloak] {
+		display: none;
+	}
+	*, *::before, *::after{
+		-webkit-tap-highlight-color: transparent;
+	}
+}
+@layer components {
+	.container {
+		@apply max-w-[1200px] m-auto px-[20px];
+	}
+
+	.container-fluid {
+		@apply max-w-[1200px] m-auto px-[10px];
+	}
+
+	.container-flex{
+		@apply max-w-[1200px] m-auto px-[10px] bold:max-w-[980px] medium:max-w-[640px];
+	}
+
+	.col {
+		@apply inline-block px-[20px] w-full;
+	}
+	.col-2 {
+		@apply basis-[50%] regular:basis-[100%] regular:px-0 flex-grow;
+	}
+	.col-3 {
+		@apply basis-[33%] max-w-[640px] medium:basis-[100%] mb-[60px] regular:mb-[30px] regular:px-0 flex-grow;
+	}
+	.col-4 {
+		@apply basis-[25%] regular:basis-[100%] regular:px-0 flex-grow;
+	}
+	.col-4-1 {
+		@apply basis-[25%] medium:basis-[33%] middle:basis-1/2 regular:px-0 flex-grow;
+	}
+
+	.text {
+		@apply text-gray text-middle middle:text-medium small:text-regular small:leading-5;
+	}
+	.text p {
+		@apply pt-[41px] small:pt-[20px];
+	}
+	.text h2 + p {
+		@apply pt-[11px] small:pt-[0px];
+	}
+	.text a,
+	.products a {
+		@apply text-primary font-semibold text-medium;
+	}
+	.text h2 {
+		@apply font-roboto text-main text-large pt-[8px] pb-[3px] font-semibold my-[30px] middle:text-busty small:text-spidy;
+	}
+	.text-rl h2 {
+		@apply text-[36px] pt-0 pb-[30px] font-semibold my-0 middle:text-busty small:text-spidy small:pb-[10px];
+	}
+	.text h3 {
+		@apply font-roboto text-main text-luby pt-[8px] pb-[3px] font-semibold  middle:text-spidy small:text-sparel;
+	}
+	.text ul {
+		@apply pt-[15px];
+	}
+	.text li {
+		@apply list-disc text-sable list-inside;
+	}
+	.text hr {
+		@apply text-primary bg-primary border-none h-[2px] my-[20px];
+	}
+
+	.tables {
+		@apply overflow-x-auto;
+	}
+	table {
+		@apply w-full border-collapse my-[20px] text-regular;
+	}
+	th,
+	td {
+		@apply border-primary border-[2px] py-[22px] px-[20px];
+	}
+	th {
+		@apply bg-primary text-white;
+	}
+
+	.pagination {
+		@apply absolute left-1/2 bottom-[10px] -translate-x-1/2 z-40 w-auto !important;
+	}
+	.pagination > .swiper-pagination-bullet-active {
+		@apply bg-primary !important;
+	}
+}
