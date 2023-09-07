@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Arbolite Sth. Build - Make your dream home a reality!</title>
+		<link rel="icon" href="./assets/img/favicon.svg" sizes="any" type="image/svg+xml">
+		<link rel="stylesheet" href="assets/css/style.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+		<script defer src="assets/js/plugins/lazy.min.js"></script>
+		<script defer src="assets/js/plugins/mask.min.js"></script>
+
+		<script defer src="assets/js/swiper.min.js"></script>
+		<script defer src="assets/js/alpine.min.js"></script>
+
+		<link rel="stylesheet" href="assets/css/swiper.min.css" />
+	</head>
+	<body class="font-montserrat scroll-smooth" :class="popupOpen ? 'overflow-hidden' : ''" x-data="{popupOpen: false, openModal: false, openModal2: false}">
+		<div>
+			<header class="header w-full absolute top-0 medium:static">
+				<div class="flex items-center w-full h-[80px] justify-between px-[40px] medium:flex-col medium:h-auto">
+					<a href="/" class="min-w-[280px] medium:block medium:text-center medium:p-[20px] medium:flex medium:justify-center">
+						<img src="./assets/img/logo.svg" class="w-[250px] h-auto block medium:m-[20px]" alt="" />
+					</a>
+					<ul class="flex justify-center items-center flex-wrap medium:block medium:flex-col medium:text-center medium:my-[20px]">
+						<li class="px-[15px] medium:p-[10px]">
+							<a
+								href="#"
+								class="text-regular font-medium text-sable relative after:absolute after:w-full after:h-full after:bottom-[20%] after:left-0 after:border-b-[1px] after:border-b-dark after:shadow-1el after:opacity-0 hover:after:opacity-100 hover:after:-bottom-[1px] after:transition-all after:ease-in-out after:duration-300"
+								>Construction</a
+							>
+						</li>
+						<li class="px-[15px] medium:p-[10px]">
+							<a
+								href="#"
+								class="text-regular font-medium text-sable relative after:absolute after:w-full after:h-full after:bottom-[20%] after:left-0 after:border-b-[1px] after:border-b-dark after:shadow-1el after:opacity-0 hover:after:opacity-100 hover:after:-bottom-[1px] after:transition-all after:ease-in-out after:duration-300"
+								>Arbolite</a
+							>
+						</li>
+						<li class="px-[15px] medium:p-[10px]">
+							<a
+								href="#"
+								class="text-regular font-medium text-sable relative after:absolute after:w-full after:h-full after:bottom-[20%] after:left-0 after:border-b-[1px] after:border-b-dark after:shadow-1el after:opacity-0 hover:after:opacity-100 hover:after:-bottom-[1px] after:transition-all after:ease-in-out after:duration-300"
+								>Projects</a
+							>
+						</li>
+						<li class="px-[15px] medium:p-[10px]">
+							<a
+								href="#"
+								class="text-regular font-medium text-sable relative after:absolute after:w-full after:h-full after:bottom-[20%] after:left-0 after:border-b-[1px] after:border-b-dark after:shadow-1el after:opacity-0 hover:after:opacity-100 hover:after:-bottom-[1px] after:transition-all after:ease-in-out after:duration-300"
+								>About us</a
+							>
+						</li>
+						<li class="px-[15px] medium:p-[10px]">
+							<a
+								href="#"
+								class="text-regular font-medium text-sable relative after:absolute after:w-full after:h-full after:bottom-[20%] after:left-0 after:border-b-[1px] after:border-b-dark after:shadow-1el after:opacity-0 hover:after:opacity-100 hover:after:-bottom-[1px] after:transition-all after:ease-in-out after:duration-300"
+								>Contacts</a
+							>
+						</li>
+					</ul>
+					<div class="min-w-[280px] text-right medium:text-center medium:w-full medium:py-[20px]">
+						<button
+							type="button"
+							@click.prevent="openModal = true; popupOpen = true"
+							class="bg-primary text-sable shadow-2lr rounded-[10px] font-bold inline-block px-[30px] h-[40px] text-small ml-[10px] hover:text-white hover:bg-sable transition ease-in-out duration-200 cursor-pointer"
+						>
+							<span class="h-full flex items-center">Request a call</span>
+						</button>
+					</div>
+				</div>
+			</header>
+
+			<div class="fixed top-0 left-0 right-0 bottom-0 overflow-y-auto z-50" @keyup.escape.window="if(openModal) {openModal = false; popupOpen = false}" x-show="openModal" x-transition.opacity.300ms x-cloak>
+				<div @click="openModal = false; popupOpen = false" class="bg-main opacity-60 w-full h-full"></div>
+				<div @click="openModal = false; popupOpen = false" class="absolute right-[20px] top-[20px] pointer w-[23px] h-[23px] cursor-pointer z-10">
+					<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g stroke="none" stroke-width="1" fill="#ffca2f" fill-rule="evenodd">
+							<rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+							<rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+						</g>
+					</svg>
+				</div>
+				<div class="absolute top-1/2 w-full bg-white max-w-[560px] -translate-y-1/2 -translate-x-1/2 left-1/2 overflow-y-auto">
+					<img src="./assets/img/pop-up.jpg" class="w-full block" alt="" />
+					<div class="py-[40px] px-[45px]">
+						<div class="font-roboto text-main text-[34px] mb-[11px] font-semibold text-center middle:text-spidy">Request a call</div>
+						<div class="text-sable text-regular">
+							<p>Fill out the form and we will definitely call you back</p>
+						</div>
+					</div>
+					<form action="" class="w-full py-[40px] px-[45px]">
+						<input type="text" placeholder="Your name" class="appearance-none font-roboto text-sable text-regular border-b-2 border-b-primary w-full outline-0 h-[60px] mb-[25px]" />
+						<input type="text" x-mask="(999) 999-9999" placeholder="Your phone" class="appearance-none font-roboto text-sable text-regular border-b-2 border-b-primary w-full outline-0 h-[60px] mb-[25px]" />
+						<button class="bg-primary text-white shadow-2lr rounded-[10px] font-medium inline-block px-[30px] h-[60px] text-regular hover:text-white hover:bg-sable transition ease-in-out duration-200 w-full">
+							<span class="h-full flex items-center justify-center">Order a call</span>
+						</button>
+						<a href="#" class="text-primary font-medium text-small text-center block mt-[20px]">Privacy Policy</a>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<section class="hero w-full h-[800px] bg-no-repeat bg-center bg-cover bg-scroll" style="background-image: url(./assets/img/sdi.jpg)">
+				<div class="container pt-[90px]">
+					<div class="w-full h-full">
+						<div class="max-w-[760px] h-full py-[42px]">
+							<h1 class="font-roboto text-main font-medium text-big uppercase pt-[24px] pb-[38px] middle:text-busty small:text-spidy">
+								<br />
+								CONSTRUCTION OF ARBOLITE IN KRASNODAR
+							</h1>
+							<div class="text-sparel text-sable pb-[30px] small:text-middle">
+								<p>Professional construction of houses from quality arbolite in Krasnodar, Krasnodar region and Crimea</p>
+							</div>
+
+							<div class="mt-[30px]">
+								<button
+									type="button"
+									@click.prevent="openModal2 = true; popupOpen = true"
+									class="bg-primary text-white shadow-2lr rounded-[10px] font-semibold inline-block px-[60px] h-[60px] text-regular mr-[10px] mt-[8px] hover:bg-sable transition ease-in-out duration-200 regular:m-[5px] regular:ml-0 regular:px-[30px]"
+								>
+									<span class="h-full flex items-center">Check prices</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="fixed top-0 left-0 right-0 bottom-0 overflow-y-auto z-50" @keyup.escape.window="if(openModal2) {openModal2 = false; popupOpen = false}" x-show="openModal2" x-transition.opacity.300ms x-cloak>
+				<div @click="openModal2 = false; popupOpen = false" class="bg-main opacity-60 w-full h-full"></div>
+				<div @click="openModal2 = false; popupOpen = false" class="absolute right-[20px] top-[20px] pointer w-[23px] h-[23px] cursor-pointer z-10">
+					<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g stroke="none" stroke-width="1" fill="#ffca2f" fill-rule="evenodd">
+							<rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+							<rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+						</g>
+					</svg>
+				</div>
+				<div class="absolute top-1/2 w-full bg-white max-w-[560px] -translate-y-1/2 -translate-x-1/2 left-1/2 overflow-y-auto">
+					<img src="./assets/img/pop-up.jpg" class="w-full block" alt="" />
+					<div class="py-[40px] px-[45px]">
+						<div class="font-roboto text-main text-[34px] mb-[11px] font-semibold text-center middle:text-spidy">Arbolit house prices</div>
+						<div class="text-sable text-regular text-center">
+							<p>Fill out the form to calculate the approximate cost</p>
+						</div>
+					</div>
+					<form action="" class="w-full py-[40px] px-[45px]">
+						<input type="text" placeholder="Your name" class="appearance-none font-roboto text-sable text-regular border-b-2 border-b-primary w-full outline-0 h-[60px] mb-[25px]" />
+						<input type="text" x-mask="(999) 999-9999" placeholder="Your phone" class="appearance-none font-roboto text-sable text-regular border-b-2 border-b-primary w-full outline-0 h-[60px] mb-[25px]" />
+						<textarea placeholder="Building location and wishes for the house" class="appearance-none font-roboto text-sable text-regular border-b-2 border-b-primary w-full outline-0 h-[60px] mb-[25px]"></textarea>
+						<button class="bg-primary text-white shadow-2lr rounded-[10px] font-medium inline-block px-[30px] h-[60px] text-regular hover:text-white hover:bg-sable transition ease-in-out duration-200 w-full">
+							<span class="h-full flex items-center justify-center">Check prices</span>
+						</button>
+						<a href="#" class="text-primary font-medium text-small text-center block mt-[20px]">Privacy Policy</a>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<section class="about" style="margin-top: 90px; margin-bottom: 45px">
+			<div class="container">
+				<div class="w-full max-w-[860px] text-sable text-middle font-normal small:text-medium">
+					"Arbolite Sth. Build" is a construction company with work experience since 2006. You can order the construction of a house from arbolite on a turnkey basis or partially in Krasnodar, Krasnodar region and Crimea. We provide a guarantee, we work strictly according to
+					contract and with stage-by-stage payment. We build houses exclusively from high-quality arbolite blocks with structural strength and with excellent geometry. On request we show already built houses from arbolite.<br /><br />
+					<a href="#" class="text-primary font-medium">Read more about us ➞</a>
+				</div>
+			</div>
+		</section>
+
+		<div class="container w-full h-[2px] my-[20px]">
+			<span class="block bg-primary w-full h-full"></span>
+		</div>
+
+		<section class="achivements" style="margin-top: 45px; margin-bottom: 90px">
+			<div class="container">
+				<div class="flex flex-wrap justify-center">
+					<div class="col col-4 text-center max-w-[300px]">
+						<img class="inline-block w-[80px] mb-[25px] h-auto" x-lazy="{url: './assets/img/1-icon.svg'}" alt="" />
+						<div class="py-[20px]">
+							<div class="font-roboto text-sable text-middle font-semibold">15 years of experience</div>
+							<div class="text-sable text-small">We have been building small-scale houses since 2006</div>
+						</div>
+					</div>
+					<div class="col col-4 text-center max-w-[300px]">
+						<img x-lazy="{url: './assets/img/2-icon.svg'}" class="inline-block w-[80px] mb-[25px] h-auto" alt="" />
+						<div class="py-[20px]">
+							<div class="font-roboto text-sable text-middle font-semibold">3 year warranty</div>
+							<div class="text-sable text-small">We give a guarantee for work 3 years, we work officially, strictly under the contract</div>
+						</div>
+					</div>
+					<div class="col col-4 text-center max-w-[300px]">
+						<img x-lazy="{url: './assets/img/3-icon.svg'}" class="inline-block w-[80px] mb-[25px] h-auto" alt="" />
+						<div class="py-[20px]">
+							<div class="font-roboto text-sable text-middle font-semibold">50+ facilities</div>
+							<div class="text-sable text-small">Built more than 50 different objects in the south: Krasnodar region, Crimea</div>
+						</div>
+					</div>
+					<div class="col col-4 text-center max-w-[300px]">
+						<img x-lazy="{url: './assets/img/4-icon.svg'}" class="inline-block w-[80px] mb-[25px] h-auto" alt="" />
+						<div class="py-[20px]">
+							<div class="font-roboto text-sable text-middle font-semibold">1-3 floors</div>
+							<div class="text-sable text-small">We build houses from durable arbolite up to 3 floors high</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="text" style="margin-top: 90px; margin-bottom: 60px">
+			<div class="container">
+				<h2>Arbolite house designs</h2>
+				<p>Catalog of ready-made projects of one-storey and two-storey houses from arbolite from our partners - design company SPlans</p>
+			</div>
+		</section>
+
+		<section class="products" style="margin-top: 60px; margin-bottom: 90px">
+			<div class="container-fluid">
+				<div class="flex flex-wrap justify-center pb-[45px]">
+					<div class="col col-2" x-data="{openThatModal: false}">
+						<button type="button" @click.prevent="openThatModal = true; popupOpen = true" class="shadow-1hr hover:shadow-2hr focus:shadow-2hr bg-white">
+							<img x-lazy="{url: './assets/img/preview_1.jpg'}" class="w-full h-auto mb-[20px] max-h-[313px]" alt="" />
+
+							<div class="px-[20px] pb-[18px]">
+								<div class="font-roboto text-middle text-main font-semibold">House project #1</div>
+								<div class="text-small text-sable mt-[8px]">Single storey house with attic, terrace and balcony for permanent residence with a total area of 1960 ft².</div>
+							</div>
+						</button>
+						<section
+							class="post fixed inset-0 bg-white z-40"
+							:class="openThisModal ? 'overflow-hidden' : 'overflow-y-auto'"
+							x-show="openThatModal"
+							@keyup.escape.window="if(openThatModal && !openThisModal) {openThatModal = false; popupOpen = false}"
+							x-data="{openThisModal: false}"
+							x-cloak
+						>
+							<header class="w-full fixed top-0 left-0 right-0 flex items-center justify-center bg-white border-b-[1px] border-b-darkness backdrop-saturate-[180%] backdropblur-[10px] py-[18px] px-[20px] z-50">
+								<a href="" class="absolute left-[20px] top-1/2 -translate-y-1/2 w-[23px] h-[23px] cursor-pointer hover:opacity-60 transition ease-in-out duration-300" @click.prevent="openThatModal = false; popupOpen = false">
+									<svg class="rotate-180" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L10 10L1 19" stroke="#2b2b2b" stroke-width="2"></path>
+									</svg>
+								</a>
+								<div class="mx-w-[80%]">
+									<a href="/" class="font-roboto text-sable opacity-80 font-semibold text-small">Main arbolite projects</a>
+								</div>
+							</header>
+
+							<main class="py-[95px] z-20">
+								<div class="container-fluid">
+									<div class="flex justify-center flex-wrap">
+										<div class="col mb-[30px] basis-1/2 medium:basis-full flex-grow">
+											<div class="relative">
+												<div
+													id="preview-slider"
+													class="max-w-full overflow-x-hidden cursor-zoom-in z-30"
+													x-init="new Swiper('#preview-slider', {
+															loop: true,
+															navigation: {
+															    nextEl: '#preview-slider-right',
+															    prevEl: '#preview-slider-left',
+															},
+															pagination: {
+																el: '#pag',
+																clickable: true
+															},
+														})"
+												>
+													<div class="swiper-wrapper items-center">
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/f-gallery-1.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/f-gallery-2.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/f-gallery-3.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/f-gallery-4.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/f-gallery-5.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/f-gallery-6.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/f-gallery-7.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/f-gallery-8.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/f-gallery-9.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/f-gallery-10.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+													</div>
+												</div>
+												<div
+													class="absolute bg-primary rounded-full w-[40px] h-[40px] transition ease-in-out duration-200 left-[5%] rotate-180 top-1/2 -translate-y-1/2 z-40 cursor-pointer hover:bg-sable"
+													id="preview-slider-left"
+												>
+													<svg
+														class="w-[11px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+														style="display: block"
+														viewBox="0 0 11.9 19"
+														xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink"
+													>
+														<polyline fill="none" stroke="#ffffff" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="3" points="1.5,1.5 9.5,9.5 1.5,17.5"></polyline>
+													</svg>
+												</div>
+												<div class="absolute bg-primary rounded-full w-[40px] h-[40px] transition ease-in-out duration-200 right-[5%] top-1/2 -translate-y-1/2 z-40 cursor-pointer hover:bg-sable" id="preview-slider-right">
+													<svg
+														class="w-[11px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+														style="display: block"
+														viewBox="0 0 11.9 19"
+														xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink"
+													>
+														<polyline fill="none" stroke="#ffffff" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="3" points="1.5,1.5 9.5,9.5 1.5,17.5"></polyline>
+													</svg>
+												</div>
+												<div id="pag" class="pagination"></div>
+											</div>
+										</div>
+										<div class="col text text-rl basis-1/2 medium:basis-full flex-grow">
+											<h2>House project #1</h2>
+											<ul>
+												<li>Total area 1964.306ft²</li>
+												<li>Living area 1155.721ft²</li>
+												<li>The dimensions of the house are 41.20 x 42.51 ft</li>
+												<li>Number of rooms 7</li>
+												<li>Number of bedrooms 5</li>
+												<li>There's an attic</li>
+												<li>Facade plaster finish</li>
+												<li>Wall material foam block / aerated concrete</li>
+											</ul>
+											<hr />
+											<p>
+												Project of individual one-story dwelling house with attic with building dimensions 41.20 x 42.51 ft. Exterior finishing of the building - facade plaster of 2 colors. The foundation is a monolithic reinforced concrete strip. Exterior walls - gas concrete blocks with finishing with warm facade plaster. Internal walls and partitions - aerated concrete blocks. Floor of the 1st floor - ground floor. Interstorey floor - on wooden beams with the use of thermal insulation materials. using thermal insulation materials in the inter-beam space. The roof is multi-pitched. Roofing - asphalt shingles. Windows - metal-plastic.
+											</p>
+										</div>
+									</div>
+								</div>
+							</main>
+							<div class="fixed top-0 left-0 right-0 bottom-0 z-[100]" @keyup.escape.window="if(openThisModal) {openThisModal = false}" x-show="openThisModal" x-cloak>
+								<div class="fixed top-0 left-0 right-0 bottom-0 bg-white"></div>
+								<a href="" class="absolute right-[20px] top-[20px] pointer w-[23px] h-[23px] cursor-pointer z-[1000] hover:opacity-60 transition ease-in-out duration-300 overflow-hidden" @click.prevent="openThisModal = false">
+									<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd">
+											<rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+											<rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+										</g>
+									</svg>
+								</a>
+								<div class="relative w-full h-full">
+									<div
+										id="full-slider"
+										class="w-full h-full z-100"
+										x-init="new Swiper('#full-slider', {
+												loop: true,
+												navigation: {
+												    nextEl: '#full-slider-right',
+												    prevEl: '#full-slider-left',
+												},
+											})"
+									>
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/f-gallery-1.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/f-gallery-2.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/f-gallery-3.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/f-gallery-4.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/f-gallery-5.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/f-gallery-6.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/f-gallery-7.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/f-gallery-8.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/f-gallery-9.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/f-gallery-10.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="absolute w-[40px] h-[40px] transition ease-in-out duration-200 left-[5%] rotate-180 top-1/2 -translate-y-1/2 z-[10001] cursor:pointer hover:opacity-60" id="full-slider-left">
+										<svg class="w-[11px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="display: block" viewBox="0 0 11.9 19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<polyline fill="none" stroke="#000" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="3" points="1.5,1.5 9.5,9.5 1.5,17.5"></polyline>
+										</svg>
+									</div>
+									<div class="absolute w-[40px] h-[40px] transition ease-in-out duration-200 right-[5%] top-1/2 -translate-y-1/2 z-[10001] cursor-pointer hover:opacity-60" id="full-slider-right">
+										<svg class="w-[11px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="display: block" viewBox="0 0 11.9 19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<polyline fill="none" stroke="#000" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="3" points="1.5,1.5 9.5,9.5 1.5,17.5"></polyline>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="col col-2" x-data="{openThatModal: false}">
+						<button type="button" @click.prevent="openThatModal = true; popupOpen = true" class="shadow-1hr hover:shadow-2hr focus:shadow-2hr bg-white">
+							<img x-lazy="{url: './assets/img/preview_2.jpg'}" class="w-full h-auto mb-[20px] max-h-[313px]" alt="" />
+
+							<div class="px-[20px] pb-[18px]">
+								<div class="font-roboto text-middle text-main font-semibold">House project #2</div>
+								<div class="text-small text-sable mt-[8px]">Single storey house with attic, garage, terrace and balcony for permanent residence with a total area of 1926 ft².</div>
+							</div>
+						</button>
+						<section
+							class="post fixed inset-0 bg-white z-40"
+							:class="openThisModal ? 'overflow-hidden' : 'overflow-y-auto'"
+							x-show="openThatModal"
+							@keyup.escape.window="if(openThatModal && !openThisModal) {openThatModal = false; popupOpen = false}"
+							x-data="{openThisModal: false}"
+							x-cloak
+						>
+							<header class="w-full fixed top-0 left-0 right-0 flex items-center justify-center bg-white border-b-[1px] border-b-darkness backdrop-saturate-[180%] backdropblur-[10px] py-[18px] px-[20px] z-50">
+								<a href="" class="absolute left-[20px] top-1/2 -translate-y-1/2 w-[23px] h-[23px] cursor-pointer hover:opacity-60 transition ease-in-out duration-300" @click.prevent="openThatModal = false; popupOpen = false">
+									<svg class="rotate-180" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L10 10L1 19" stroke="#2b2b2b" stroke-width="2"></path>
+									</svg>
+								</a>
+								<div class="mx-w-[80%]">
+									<a href="/" class="font-roboto text-sable opacity-80 font-semibold text-small">Main arbolite projects</a>
+								</div>
+							</header>
+
+							<main class="py-[95px] z-20">
+								<div class="container-fluid">
+									<div class="flex justify-center flex-wrap">
+										<div class="col mb-[30px] basis-1/2 medium:basis-full flex-grow">
+											<div class="relative">
+												<div
+													id="preview-slider"
+													class="max-w-full overflow-x-hidden cursor-zoom-in z-30"
+													x-init="new Swiper('#preview-slider', {
+															loop: true,
+															navigation: {
+															    nextEl: '#preview-slider-right',
+															    prevEl: '#preview-slider-left',
+															},
+															pagination: {
+																el: '#pag',
+																clickable: true
+															},
+														})"
+												>
+													<div class="swiper-wrapper items-center">
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/s-gallery-1.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/s-gallery-2.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/s-gallery-3.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/s-gallery-4.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/s-gallery-5.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/s-gallery-6.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/s-gallery-7.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/s-gallery-8.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/s-gallery-9.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+														<img
+															@click="openThisModal = true"
+															x-lazy="{url: './assets/img/s-gallery-10.jpg'}"
+															class="swiper-slide w-full h-auto"
+															alt=""
+														/>
+													</div>
+												</div>
+												<div
+													class="absolute bg-primary rounded-full w-[40px] h-[40px] transition ease-in-out duration-200 left-[5%] rotate-180 top-1/2 -translate-y-1/2 z-40 cursor-pointer hover:bg-sable"
+													id="preview-slider-left"
+												>
+													<svg
+														class="w-[11px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+														style="display: block"
+														viewBox="0 0 11.9 19"
+														xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink"
+													>
+														<polyline fill="none" stroke="#ffffff" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="3" points="1.5,1.5 9.5,9.5 1.5,17.5"></polyline>
+													</svg>
+												</div>
+												<div class="absolute bg-primary rounded-full w-[40px] h-[40px] transition ease-in-out duration-200 right-[5%] top-1/2 -translate-y-1/2 z-40 cursor-pointer hover:bg-sable" id="preview-slider-right">
+													<svg
+														class="w-[11px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+														style="display: block"
+														viewBox="0 0 11.9 19"
+														xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink"
+													>
+														<polyline fill="none" stroke="#ffffff" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="3" points="1.5,1.5 9.5,9.5 1.5,17.5"></polyline>
+													</svg>
+												</div>
+												<div id="pag" class="pagination"></div>
+											</div>
+										</div>
+										<div class="col text text-rl basis-1/2 medium:basis-full flex-grow">
+											<h2>House project #2</h2>
+											<ul>
+												<li>Total area 1934.38ft²</li>
+												<li>Living area 1032.25ft²</li>
+												<li>The dimensions of the house are 42.02 x 49.54 ft</li>
+												<li>Number of rooms 5</li>
+												<li>There's a garage</li>
+												<li>There's an attic</li>
+												<li>Finishing plaster, der/panels</li>
+												<li>Wall material foam block / aerated concrete</li>
+											</ul>
+											<hr />
+											<p>
+												Design of an individual one-story single-family dwelling with attic with building dimensions of 4.2 x 4.9 ft. Exterior finishing of the building - facade plaster and wooden panels. Foundation - bored pile foundation (pile-rocker). External walls - gas silicate blocks, insulation - extruded polystyrene foam with finishing facade plaster and wooden panels Internal walls - gas silicate blocks Partitions are made of gas silicate blocks. Ventilation ducts and chimneys are plastered on the outside. Lintels - monolithic and welded from rolled profile. Ceiling over the first floor - wooden beams. The floor of the first floor is a ground floor. The roof is multi-pitched. Roofing material - flexible roofing. Windows - metal-plastic, made to individual order.
+											</p>
+										</div>
+									</div>
+								</div>
+							</main>
+							<div class="fixed top-0 left-0 right-0 bottom-0 z-[100]" @keyup.escape.window="if(openThisModal) {openThisModal = false}" x-show="openThisModal" x-cloak>
+								<div class="fixed top-0 left-0 right-0 bottom-0 bg-white"></div>
+								<a href="" class="absolute right-[20px] top-[20px] pointer w-[23px] h-[23px] cursor-pointer z-[1000] hover:opacity-60 transition ease-in-out duration-300 overflow-hidden" @click.prevent="openThisModal = false">
+									<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd">
+											<rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+											<rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+										</g>
+									</svg>
+								</a>
+								<div class="relative w-full h-full">
+									<div
+										id="full-slider"
+										class="w-full h-full z-100"
+										x-init="new Swiper('#full-slider', {
+												loop: true,
+												navigation: {
+												    nextEl: '#full-slider-right',
+												    prevEl: '#full-slider-left',
+												},
+											})"
+									>
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/s-gallery-1.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/s-gallery-2.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/s-gallery-3.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/s-gallery-4.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/s-gallery-5.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/s-gallery-6.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/s-gallery-7.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/s-gallery-8.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/s-gallery-9.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+											<div class="swiper-slide">
+												<img
+													x-lazy="{url: './assets/img/s-gallery-10.jpg'}"
+													class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-[80%] h-auto"
+													alt=""
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="absolute w-[40px] h-[40px] transition ease-in-out duration-200 left-[5%] rotate-180 top-1/2 -translate-y-1/2 z-[10001] cursor:pointer hover:opacity-60" id="full-slider-left">
+										<svg class="w-[11px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="display: block" viewBox="0 0 11.9 19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<polyline fill="none" stroke="#000" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="3" points="1.5,1.5 9.5,9.5 1.5,17.5"></polyline>
+										</svg>
+									</div>
+									<div class="absolute w-[40px] h-[40px] transition ease-in-out duration-200 right-[5%] top-1/2 -translate-y-1/2 z-[10001] cursor-pointer hover:opacity-60" id="full-slider-right">
+										<svg class="w-[11px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="display: block" viewBox="0 0 11.9 19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<polyline fill="none" stroke="#000" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="3" points="1.5,1.5 9.5,9.5 1.5,17.5"></polyline>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="flex flex-wrap justify-center">
+					<div class="col col-4 mb-[45px]">
+						<a href="#" class="shadow-1hr hover:shadow-2hr focus:shadow-2hr bg-white">
+							<img x-lazy="{url: './assets/img/sm_preview_1.jpg'}" class="w-full h-auto mb-[20px]" alt="" />
+
+							<div class="px-[20px] pb-[18px]">
+								<div class="font-roboto text-middle text-main font-semibold">House project #1</div>
+								<div class="text-small font-normal text-sable mt-[8px]">Single storey house with attic, terrace and balcony for permanent residence with a total area of 1960 ft².</div>
+							</div>
+						</a>
+					</div>
+					<div class="col col-4 mb-[45px]">
+						<a href="#" class="shadow-1hr hover:shadow-2hr focus:shadow-2hr bg-white">
+							<img x-lazy="{url: './assets/img/sm_preview_2.jpg'}" class="w-full h-auto mb-[20px]" alt="" />
+
+							<div class="px-[20px] pb-[18px]">
+								<div class="font-roboto text-middle text-main font-semibold">House project #2</div>
+								<div class="text-small font-normal text-sable mt-[8px]">Single storey house with attic, garage, terrace and balcony for permanent residence with a total area of 1926 ft².</div>
+							</div>
+						</a>
+					</div>
+					<div class="col col-4 mb-[45px]">
+						<a href="#" class="shadow-1hr hover:shadow-2hr focus:shadow-2hr bg-white">
+							<img x-lazy="{url: './assets/img/sm_preview_3.jpg'}" class="w-full h-auto mb-[20px]" alt="" />
+
+							<div class="px-[20px] pb-[18px]">
+								<div class="font-roboto text-middle text-main font-semibold">House project #3</div>
+								<div class="text-small font-normal text-sable mt-[8px]">Single storey house with attic, garage, terrace and balcony with a total area of 1668ft².</div>
+							</div>
+						</a>
+					</div>
+					<div class="col col-4 mb-[45px]">
+						<a href="#" class="shadow-1hr hover:shadow-2hr focus:shadow-2hr bg-white">
+							<img x-lazy="{url: './assets/img/sm_preview_4.jpg'}" class="w-full h-auto mb-[20px]" alt="" />
+
+							<div class="px-[20px] pb-[18px]">
+								<div class="font-roboto text-middle text-main font-semibold">House project #4</div>
+								<div class="text-small font-normal text-sable mt-[8px]">Single storey house with attic, garage, terrace and balcony with a total area of 1840ft².</div>
+							</div>
+						</a>
+					</div>
+					<div class="col col-4 mb-[45px]">
+						<a href="#" class="shadow-1hr hover:shadow-2hr focus:shadow-2hr bg-white">
+							<img x-lazy="{url: './assets/img/sm_preview_5.jpg'}" class="w-full h-auto mb-[20px]" alt="" />
+
+							<div class="px-[20px] pb-[18px]">
+								<div class="font-roboto text-middle text-main font-semibold">House project #5</div>
+								<div class="text-small font-normal text-sable mt-[8px]">Single storey house with attic, garage, terrace and balcony with a total area of 1959ft².</div>
+							</div>
+						</a>
+					</div>
+					<div class="col col-4 mb-[45px]">
+						<a href="#" class="shadow-1hr hover:shadow-2hr focus:shadow-2hr bg-white">
+							<img x-lazy="{url: './assets/img/sm_preview_6.jpg'}" class="w-full h-auto mb-[20px]" alt="" />
+
+							<div class="px-[20px] pb-[18px]">
+								<div class="font-roboto text-middle text-main font-semibold">House project #6</div>
+								<div class="text-small font-normal text-sable mt-[8px]">Single storey dwelling house with attic, balcony and two car garage with a total area of 2131ft².</div>
+							</div>
+						</a>
+					</div>
+					<div class="col col-4 mb-[45px]">
+						<a href="#" class="shadow-1hr hover:shadow-2hr focus:shadow-2hr bg-white">
+							<img x-lazy="{url: './assets/img/sm_preview_7.jpg'}" class="w-full h-auto mb-[20px]" alt="" />
+
+							<div class="px-[20px] pb-[18px]">
+								<div class="font-roboto text-middle text-main font-semibold">House project #7</div>
+								<div class="text-small font-normal text-sable mt-[8px]">Single storey house with attic and terrace for permanent residence with a total area of 1011ft².</div>
+							</div>
+						</a>
+					</div>
+					<div class="col col-4 mb-[45px]">
+						<a href="#" class="shadow-1hr hover:shadow-2hr focus:shadow-2hr bg-white">
+							<img x-lazy="{url: './assets/img/sm_preview_8.jpg'}" class="w-full h-auto mb-[20px]" alt="" />
+
+							<div class="px-[20px] pb-[18px]">
+								<div class="font-roboto text-middle text-main font-semibold">House project #8</div>
+								<div class="text-small font-normal text-sable mt-[8px]">Single storey house with attic, garage, terrace and balcony with a total area of 2088ft².</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<a href="#">See all house designs ➞</a>
+			</div>
+		</section>
+
+		<section class="text" style="margin-top: 90px; margin-bottom: 60px">
+			<div class="container">
+				<div class="flex medium:justify-center">
+					<div class="max-w-[760px] medium:max-w-[600px]">
+						<h2>Advantages of houses made of arbolite</h2>
+						<p>The main advantages of residential houses made of arbolite blocks, built by the company "Arbolite Sth. Build"</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages">
+			<div class="container-fluid">
+				<div class="flex flex-wrap justify-center">
+					<div class="col col-3">
+						<div class="flex items-center">
+							<img x-lazy="{url: './assets/img/adv-1.svg'}" class="w-[60px] mr-[16px] h-auto" alt="" />
+							<div class="font-roboto text-middle text-sable font-semibold">Strong and warm walls</div>
+						</div>
+						<div class="text-sable mt-[12px] text-small pb-[10px]">
+							The walls of the house made of high-quality arbolite blocks can withstand the load of three floors, including the use of reinforced concrete floor slabs. And the thickness of the walls of arbolite in 11 inches is comfortable for living and does not require additional insulation.
+						</div>
+					</div>
+					<div class="col col-3">
+						<div class="flex items-center">
+							<img x-lazy="{url: './assets/img/adv-2.svg'}" class="w-[60px] mr-[16px] h-auto" alt="" />
+							<div class="font-roboto text-middle text-sable font-semibold">Lightweight foundation</div>
+						</div>
+						<div class="text-sable mt-[12px] text-small pb-[10px]">
+							Arbolite unlike other building blocks is characterized by light weight, which allows you to significantly save on the foundation. The difference with brick, for example, is almost three times: 600-700 kg vs. two tons for one cube!
+						</div>
+					</div>
+					<div class="col col-3">
+						<div class="flex items-center">
+							<img x-lazy="{url: './assets/img/adv-3.svg'}" class="w-[60px] mr-[16px] h-auto" alt="" />
+							<div class="font-roboto text-middle text-sable font-semibold">Good soundproofing</div>
+						</div>
+						<div class="text-sable mt-[12px] text-small pb-[10px]">
+							Walls made of arbolite blocks have excellent sound insulation values. The sound absorption coefficient of arbolite is 0.17-0.6 at sound frequencies of 125-2000 Hz against brick with data of 0.04 at 1000 Hz.
+						</div>
+					</div>
+					<div class="col col-3">
+						<div class="flex items-center">
+							<img x-lazy="{url: './assets/img/adv-4.svg'}" class="w-[60px] mr-[16px] h-auto" alt="" />
+							<div class="font-roboto text-middle text-sable font-semibold">Ecological material</div>
+						</div>
+						<div class="text-sable mt-[12px] text-small pb-[10px]">
+							Arbolite consists of almost 90% natural wood - softwood chips. The remaining components are cement, water and aluminum sulfate. Aluminum sulfate is a known safe food additive E520.
+						</div>
+					</div>
+					<div class="col col-3">
+						<div class="flex items-center">
+							<img x-lazy="{url: './assets/img/adv-5.svg'}" class="w-[60px] mr-[16px] h-auto" alt="" />
+							<div class="font-roboto text-middle text-sable font-semibold">Do not rot or burn</div>
+						</div>
+						<div class="text-sable mt-[12px] text-small pb-[10px]">
+							In a house made of arbolite, if the vapor permeability of the wall is correctly calculated, there will be no mold and fungi, all excess moisture goes out through the walls. As for combustibility - arboblocks do not burn, but support combustion, which is important.
+						</div>
+					</div>
+					<div class="col col-3">
+						<div class="flex items-center">
+							<img x-lazy="{url: './assets/img/adv-6.svg'}" class="w-[60px] mr-[16px] h-auto" alt="" />
+							<div class="font-roboto text-middle text-sable font-semibold">No wall shrinkage</div>
+						</div>
+						<div class="text-sable mt-[12px] text-small pb-[10px]">
+							The walls of a house made of high-quality arbolite blocks have a minimum shrinkage of 0.4%. For comparison, the shrinkage coefficient of other building materials, such as aerated blocks and foam blocks, is 2 times greater.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="text" style="margin-top: 90px; margin-bottom: 60px">
+			<div class="container">
+				<div class="flex">
+					<div class="max-w-[760px] medium:max-w-[600px]">
+						<h2>Gallery of arbolite blocks</h2>
+						<p>Photos of the use of arbolite wall blocks in the process of building a residential house: cutting blocks with a saw and laying walls</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery" x-data="{openGallery: false}">
+			<div class="container-fluid">
+				<div class="flex flex-wrap">
+					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true; popupOpen = true">
+						<img x-lazy="{url: './assets/img/f-arbolit-1.jpg'}" class="cursor-zoom-in" alt="" />
+					</div>
+					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true; popupOpen = true">
+						<img x-lazy="{url: './assets/img/f-arbolit-2.jpg'}" class="cursor-zoom-in" alt="" />
+					</div>
+					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true; popupOpen = true">
+						<img x-lazy="{url: './assets/img/f-arbolit-3.jpg'}" class="cursor-zoom-in" alt="" />
+					</div>
+					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true; popupOpen = true">
+						<img x-lazy="{url: './assets/img/f-arbolit-4.jpg'}" class="cursor-zoom-in" alt="" />
+					</div>
+					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true; popupOpen = true">
+						<img x-lazy="{url: './assets/img/f-arbolit-5.jpg'}" class="cursor-zoom-in" alt="" />
+					</div>
+					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true; popupOpen = true">
+						<img x-lazy="{url: './assets/img/f-arbolit-6.jpg'}" class="cursor-zoom-in" alt="" />
+					</div>
+					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true; popupOpen = true">
+						<img x-lazy="{url: './assets/img/f-arbolit-7.jpg'}" class="cursor-zoom-in" alt="" />
+					</div>
+					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true; popupOpen = true">
+						<img x-lazy="{url: './assets/img/f-arbolit-8.jpg'}" class="cursor-zoom-in" alt="" />
+					</div>
+				</div>
+				<div class="fixed top-0 left-0 right-0 bottom-0 z-[100]" @keyup.escape.window="if(openGallery) {openGallery = false; popupOpen = false}" x-show="openGallery" x-cloak>
+					<div class="fixed top-0 left-0 right-0 bottom-0 bg-white"></div>
+					<a href="" class="absolute right-[20px] top-[20px] pointer w-[23px] h-[23px] cursor-pointer z-[1000] hover:opacity-60 transition ease-in-out duration-300 overflow-hidden" @click.prevent="openGallery = false; popupOpen = false">
+						<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd">
+								<rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+								<rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+							</g>
+						</svg>
+					</a>
+					<div class="relative w-full h-full">
+						<div
+							id="gallery-slider"
+							class="w-full h-full z-100"
+							x-init="new Swiper('#gallery-slider', {
+												loop: true,
+												navigation: {
+												    nextEl: '#gallery-slider-right',
+												    prevEl: '#gallery-slider-left',
+												},
+											})"
+						>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img
+										x-lazy="{url: './assets/img/f-arbolit-1.jpg'}"
+										class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-full h-auto"
+										alt=""
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										x-lazy="{url: './assets/img/f-arbolit-2.jpg'}"
+										class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-full h-auto"
+										alt=""
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										x-lazy="{url: './assets/img/f-arbolit-3.jpg'}"
+										class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-full h-auto"
+										alt=""
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										x-lazy="{url: './assets/img/f-arbolit-4.jpg'}"
+										class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-full h-auto"
+										alt=""
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										x-lazy="{url: './assets/img/f-arbolit-5.jpg'}"
+										class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-full h-auto"
+										alt=""
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										x-lazy="{url: './assets/img/f-arbolit-6.jpg'}"
+										class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-full h-auto"
+										alt=""
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										x-lazy="{url: './assets/img/f-arbolit-7.jpg'}"
+										class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-full h-auto"
+										alt=""
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										x-lazy="{url: './assets/img/f-arbolit-8.jpg'}"
+										class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[80%] max-h-full h-auto"
+										alt=""
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="absolute w-[40px] h-[40px] transition ease-in-out duration-200 left-[5%] rotate-180 top-1/2 -translate-y-1/2 z-[10001] cursor:pointer hover:opacity-60" id="gallery-slider-left">
+							<svg class="w-[11px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="display: block" viewBox="0 0 11.9 19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<polyline fill="none" stroke="#000" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="3" points="1.5,1.5 9.5,9.5 1.5,17.5"></polyline>
+							</svg>
+						</div>
+						<div class="absolute w-[40px] h-[40px] transition ease-in-out duration-200 right-[5%] top-1/2 -translate-y-1/2 z-[10001] cursor-pointer hover:opacity-60" id="gallery-slider-right">
+							<svg class="w-[11px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="display: block" viewBox="0 0 11.9 19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<polyline fill="none" stroke="#000" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="3" points="1.5,1.5 9.5,9.5 1.5,17.5"></polyline>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="text" style="margin-top: 90px; margin-bottom: 60px">
+			<div class="container">
+				<div class="flex">
+					<div class="max-w-[760px] medium:max-w-[600px]">
+						<h2>Comparison of arbolite blocks</h2>
+						<p>Comparative table with characteristics of arbolite and other wall blocks used for construction of residential houses</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="tables container">
+			<table>
+				<tr>
+					<th>Types of blocks</th>
+					<th>Arbolite</th>
+					<th>Wood</th>
+					<th>Gas silicate</th>
+					<th>Foam block</th>
+				</tr>
+				<tr>
+					<td>Теплопроводность, Вт/(м℃)</td>
+					<td>0,09-0,17</td>
+					<td>0,1-0,38</td>
+					<td>0,12-0,2</td>
+					<td>0,14-0,38</td>
+				</tr>
+				<tr>
+					<td>Sound absorption, dB</td>
+					<td>0,019</td>
+					<td>0,1</td>
+					<td>0,2</td>
+					<td>0,2</td>
+				</tr>
+				<tr>
+					<td>Density, kg/m³</td>
+					<td>400-700</td>
+					<td>400-600</td>
+					<td>300-700</td>
+					<td>300-700</td>
+				</tr>
+				<tr>
+					<td>Shrinkage, mm</td>
+					<td>0,4-0,5</td>
+					<td>300-100</td>
+					<td>0,5</td>
+					<td>1-3</td>
+				</tr>
+				<tr>
+					<td>Combustibility</td>
+					<td>unsupported</td>
+					<td>ignites</td>
+					<td>non-flammable</td>
+					<td>non-flammable</td>
+				</tr>
+			</table>
+		</div>
+
+		<section class="text" style="margin-top: 90px; margin-bottom: 60px">
+			<div class="container">
+				<div class="flex">
+					<div class="max-w-[760px] medium:max-w-[600px]">
+						<h2>Arbolite production technology</h2>
+						<p>Component composition and description of technology of manufacturing of arbolite blocks, which we use for construction</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="tech" style="margin-top: 45px; margin-bottom: 60px">
+			<div class="container-flex">
+				<div class="flex medium:flex-col">
+					<div class="basis-1/2 my-[20px]">
+						<div class="flex flex-col mb-[25px]">
+							<div class="flex">
+								<div class="w-[60px] h-[60px]" style="background: url(./assets/img/sur-1.svg) no-repeat center"></div>
+								<div class="basis-full pl-[30px]">
+									<p class="font-roboto font-semibold text-main pb-[15px] text-medium">Preparation of raw materials</p>
+									<p class="text-sable text-small font-roboto">Four components are used to produce arbolite blocks: wood chips, M500 cement, aluminum sulfate and water.</p>
+								</div>
+							</div>
+						</div>
+						<div class="flex flex-col mb-[25px]">
+							<div class="flex">
+								<div class="w-[60px] h-[60px]" style="background: url(./assets/img/sur-2.svg) no-repeat center"></div>
+								<div class="basis-full pl-[30px]">
+									<p class="font-roboto font-semibold text-main pb-[15px] text-medium">Vibrocompression</p>
+									<p class="text-sable text-small font-roboto">Blocks are produced on specialized factory equipment in accordance with State Standard requirements.</p>
+								</div>
+							</div>
+						</div>
+						<div class="flex flex-col mb-[25px]">
+							<div class="flex">
+								<div class="w-[60px] h-[60px]" style="background: url(./assets/img/sur-3.svg) no-repeat center"></div>
+								<div class="basis-full pl-[30px]">
+									<p class="font-roboto font-semibold text-main pb-[15px] text-medium">Exposure in molds</p>
+									<p class="text-sable text-small font-roboto">After pressing, the blocks are kept in sealed molds for 24 hours, then disassembled and sent to the warehouse.</p>
+								</div>
+							</div>
+						</div>
+						<div class="flex flex-col mb-[25px]">
+							<div class="flex">
+								<div class="w-[60px] h-[60px]" style="background: url(./assets/img/sur-4.svg) no-repeat center"></div>
+								<div class="basis-full pl-[30px]">
+									<p class="font-roboto font-semibold text-main pb-[15px] text-medium">Shipment of blocks</p>
+									<p class="text-sable text-small font-roboto">Dried arbolite blocks are stacked on pallets, wrapped with strepping tape and shipped to customers.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="basis-1/2 my-[20px] medium:order-first">
+						<div class="flex flex-wrap space-5">
+							<div class="basis-1/2 p-[10px]">
+								<img src="./assets/img/use-1.jpg" class="h-[220px] w-full object-cover" alt="">
+							</div>
+							<div class="basis-1/2 p-[10px]">
+								<img src="./assets/img/use-2.jpg" class="h-[220px] w-full object-cover" alt="">
+							</div>
+							<div class="basis-1/2 p-[10px]">
+								<img src="./assets/img/use-3.jpg" class="h-[220px] w-full object-cover" alt="">
+							</div>
+							<div class="basis-1/2 p-[10px]">
+								<img src="./assets/img/use-4.webp" class="h-[220px] w-full object-cover" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="text" style="margin-top: 90px; margin-bottom: 60px">
+			<div class="container">
+				<div class="flex">
+					<div class="max-w-[760px] medium:max-w-[600px]">
+						<h2>Assortment of arbolite blocks</h2>
+						<p>Line of construction arbolite blocks for the construction of external bearing walls, internal partitions and reinforcing belt</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="blocks">
+			<div class="container-flex">
+				<div class="flex flex-wrap">
+					<div class="basis-1/3 medium:basis-1/2 middle:basis-full px-[20px] mb-[40px]">
+						<div class="pb-[15px]">
+							<img src="./assets/img/arblock-1.jpg" class="w-full" alt="">
+						</div>
+						<div class="py-[27px] px-[10px]">
+							<p class="font-roboto font-semibold text-main pb-[15px] text-middle"> Porous block</p>
+							<p class="text-sable text-small">Arbolite block with porous outer and/or inner layer for building a 1-3 storey high house. It does not blow and does not require finishing in the form of plaster. It can be used as a ready-made element of external walls.</p>
+						</div>
+						<div class="flex px-[10px] pb-[21px] bold:flex-col bold:items-baseline middle:items-stretch">
+							<button
+								type="button"
+								@click.prevent="openModal2 = true; popupOpen = true"
+								class="bg-primary text-white shadow-2lr rounded-[10px] font-bold inline-block px-[30px] h-[45px] text-small hover:bg-sable transition ease-in-out duration-200 cursor-pointer mr-[4px] mb-[8px]"
+							>
+								<span class="h-full flex justify-center items-center">Block price</span>
+							</button>
+							<button
+								type="button"
+								@click.prevent="openModal = true; popupOpen = true"
+								class="border-[2px] border-sable text-sable hover:text-white hover:bg-sable shadow-2lr rounded-[10px] font-semibold inline-block px-[30px] h-[45px] text-small transition ease-in-out duration-200 cursor-pointer mr-[4px] mb-[8px]"
+							>
+								<span class="h-full flex justify-center items-center">Purchase</span>
+							</button>
+						</div>
+					</div>
+					<div class="basis-1/3 medium:basis-1/2 middle:basis-full px-[20px] mb-[40px]">
+						<div class="pb-[15px]">
+							<img src="./assets/img/arblock-2.jpg" class="w-full" alt="">
+						</div>
+						<div class="py-[27px] px-[10px]">
+							<p class="font-roboto font-semibold text-main pb-[15px] text-middle"> Partition block</p>
+							<p class="text-sable text-small">Arbolite block for the construction of internal partition walls with a width of 140 mm. It has excellent sound insulation in the room and also holds fasteners and curtain walling well.</p>
+						</div>
+						<div class="flex px-[10px] pb-[21px] bold:flex-col bold:items-baseline middle:items-stretch">
+							<button
+								type="button"
+								@click.prevent="openModal2 = true; popupOpen = true"
+								class="bg-primary text-white shadow-2lr rounded-[10px] font-bold inline-block px-[30px] h-[45px] text-small hover:bg-sable transition ease-in-out duration-200 cursor-pointer mr-[4px] mb-[8px]"
+							>
+								<span class="h-full flex justify-center items-center">Block price</span>
+							</button>
+							<button
+								type="button"
+								@click.prevent="openModal = true; popupOpen = true"
+								class="border-[2px] border-sable text-sable hover:text-white hover:bg-sable shadow-2lr rounded-[10px] font-semibold inline-block px-[30px] h-[45px] text-small transition ease-in-out duration-200 cursor-pointer mr-[4px] mb-[8px]"
+							>
+								<span class="h-full flex justify-center items-center">Purchase</span>
+							</button>
+						</div>
+					</div>
+					<div class="basis-1/3 medium:basis-1/2 middle:basis-full px-[20px] mb-[40px]">
+						<div class="pb-[15px]">
+							<img src="./assets/img/arblock-3.jpg" class="w-full" alt="">
+						</div>
+						<div class="py-[27px] px-[10px]">
+							<p class="font-roboto font-semibold text-main pb-[15px] text-middle"> Armoblock with recess</p>
+							<p class="text-sable text-small">Arbolite block with a special U-shaped notch for the construction of a reinforcing belt between floors to distribute a uniform load on the load-bearing walls of the house and on the foundation. It is produced in the size of 500×300×250 mm.</p>
+						</div>
+						<div class="flex px-[10px] pb-[21px] bold:flex-col bold:items-baseline middle:items-stretch">
+							<button
+								type="button"
+								@click.prevent="openModal2 = true; popupOpen = true"
+								class="bg-primary text-white shadow-2lr rounded-[10px] font-bold inline-block px-[30px] h-[45px] text-small hover:bg-sable transition ease-in-out duration-200 cursor-pointer mr-[4px] mb-[8px]"
+							>
+								<span class="h-full flex justify-center items-center">Block price</span>
+							</button>
+							<button
+								type="button"
+								@click.prevent="openModal = true; popupOpen = true"
+								class="border-[2px] border-sable text-sable hover:text-white hover:bg-sable shadow-2lr rounded-[10px] font-semibold inline-block px-[30px] h-[45px] text-small transition ease-in-out duration-200 cursor-pointer mr-[4px] mb-[8px]"
+							>
+								<span class="h-full flex justify-center items-center">Purchase</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="text" style="margin-top: 90px; margin-bottom: 60px">
+			<div class="container">
+				<div class="flex">
+					<div class="max-w-[760px] medium:max-w-[600px]">
+						<h2>Block Calculator</h2>
+						<p>Calculate the cost of arbolite blocks.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="calculator" style="margin-top: 30px; margin-bottom: 90px" x-data="{Q4: '0', Q6: '0', Q8: '0', Q15: '0', Q17: '0', W13: '1', walls_AB: '1', walls_BC: '1', walls_DC: '1', walls_A_A1: '1', walls_A1_B: '1', floors: '1', masandra: true, cherdak: true}">
+			<div class="container">
+				<div class="flex flex-wrap">
+					<div class="basis-1/2 medium:basis-full mb-[30px]">
+						<p class="mb-[15px] text-medium text-sable">Enter your information:</p>
+						<div class="text-medium text-sable w-full flex middle:flex-col border-[1px] border-sable border-solid mb-[10px] rounded-[5px]">
+							<div class="w-[70%] middle:w-full px-[15px] py-[15px] border-r-[1px] border-r-sable middle:border-r-[0px] middle:border-b-solid middle:border-b-[1px] middle:border-b-sable border-r-solid">Wall thickness Q (m)*</div>
+							<input type="number" x-model="Q4" @change="if($el.value.length < 1 || $el.value < 0){$el.value = 0; Q4 = 0}" class="outline-0 w-[30%] middle:w-full px-[10px] py-[15px]">
+						</div>
+						<div class="text-medium text-sable w-full flex middle:flex-col border-[1px] border-sable border-solid mb-[10px] rounded-[5px]">
+							<div class="w-[70%] middle:w-full px-[15px] py-[15px] border-r-[1px] border-r-sable middle:border-r-[0px] middle:border-b-solid middle:border-b-[1px] middle:border-b-sable border-r-solid">External width X wall (m)*</div>
+							<input type="number" x-model="Q6" value="0" @change="if($el.value.length < 1 || $el.value < 0){$el.value = 0; Q6 = 0}" class="outline-0 w-[30%] middle:w-full px-[10px] py-[15px]">
+						</div>
+						<div class="text-medium text-sable w-full flex middle:flex-col border-[1px] border-sable border-solid mb-[10px] rounded-[5px]">
+							<div class="w-[70%] middle:w-full px-[15px] py-[15px] border-r-[1px] border-r-sable middle:border-r-[0px] middle:border-b-solid middle:border-b-[1px] middle:border-b-sable border-r-solid">Outer linna Z of the wall (m)*</div>
+							<input type="number" x-model="Q8" value="0" @change="if($el.value.length < 1 || $el.value < 0){$el.value = 0; Q8 = 0}" class="outline-0 w-[30%] middle:w-full px-[10px] py-[15px]">
+						</div>
+						<div class="text-medium text-sable w-full flex middle:flex-col border-[1px] border-sable border-solid mb-[10px] rounded-[5px]">
+							<div class="w-[70%] middle:w-full px-[15px] py-[15px] border-r-[1px] border-r-sable middle:border-r-[0px] middle:border-b-solid middle:border-b-[1px] middle:border-b-sable border-r-solid">Wall height Y (m)*</div>
+							<input type="number" x-model="Q15" value="0" @change="if($el.value.length < 1 || $el.value < 0){$el.value = 0; Q15 = 0}" class="outline-0 w-[30%] middle:w-full px-[10px] py-[15px]">
+						</div>
+						<div class="text-medium text-sable w-full flex middle:flex-col border-[1px] border-sable border-solid mb-[10px] rounded-[5px]">
+							<div class="w-[70%] middle:w-full px-[15px] py-[15px] border-r-[1px] border-r-sable middle:border-r-[0px] middle:border-b-solid middle:border-b-[1px] middle:border-b-sable border-r-solid">Wall height H (m)*</div>
+							<input type="number" x-model="Q17" value="0" @change="if($el.value.length < 1 || $el.value < 0){$el.value = 0; Q17 = 0}" class="outline-0 w-[30%] middle:w-full px-[10px] py-[15px]">
+						</div>
+						<div class="text-medium text-sable w-full flex middle:flex-col border-[1px] border-sable border-solid mb-[10px] rounded-[5px]">
+							<div class="w-[70%] middle:w-full px-[15px] py-[15px] border-r-[1px] border-r-sable middle:border-r-[0px] middle:border-b-solid middle:border-b-[1px] middle:border-b-sable border-r-solid">Floors in the house</div>
+							<input type="number" x-model="floors" value="1" @change="if($el.value.length < 1 || $el.value < 1){$el.value = 1; floors = 1}" class="outline-0 w-[30%] middle:w-full px-[10px] py-[15px]">
+						</div>
+						<div class="text-medium text-sable w-full flex middle:flex-col border-[1px] border-sable border-solid mb-[10px] rounded-[5px]">
+							<div class="w-[70%] middle:w-full px-[15px] py-[15px] border-r-[1px] border-r-sable middle:border-r-[0px] border-r-solid middle:text-center">Masandra</div>
+							<div class="flex w-[30%] middle:w-full">
+								<input type="checkbox" x-model="masandra" checked class="hidden">
+								<div class="rounded-r-[5px] basis-1/2 flex-grow h-full uppercase font-medium text-center px-[10px] py-[15px] cursor-pointer transition ease-in-out" @click="masandra = true" :class="masandra ? 'bg-sable text-white' : ''">Yes</div>
+								<div class="rounded-l-[5px] basis-1/2 flex-grow h-full uppercase font-medium text-center px-[10px] py-[15px] cursor-pointer transition ease-in-out" @click="masandra = false" :class="!masandra ? 'bg-sable text-white' : ''">No</div>
+							</div>
+						</div>
+						<div class="text-medium text-sable w-full flex middle:flex-col border-[1px] border-sable border-solid mb-[10px] rounded-[5px]">
+							<div class="w-[70%] middle:w-full px-[15px] py-[15px] border-r-[1px] border-r-sable middle:border-r-[0px] border-r-solid middle:text-center">Attic</div>
+							<div class="flex w-[30%] middle:w-full">
+								<input type="checkbox" x-model="cherdak" checked class="hidden">
+								<div class="rounded-r-[5px] basis-1/2 flex-grow h-full uppercase font-medium text-center px-[10px] py-[15px] cursor-pointer transition ease-in-out" @click="cherdak = true" :class="cherdak ? 'bg-sable text-white' : ''">Yes</div>
+								<div class="rounded-l-[5px] basis-1/2 flex-grow h-full uppercase font-medium text-center px-[10px] py-[15px] cursor-pointer transition ease-in-out" @click="cherdak = false" :class="!cherdak ? 'bg-sable text-white' : ''">No</div>
+							</div>
+						</div>
+						<p class="my-[15px] text-medium text-sable">Bearing walls (pcs.): </p>
+						<div class="text-medium text-sable w-full flex border-[1px] border-sable border-solid mb-[10px] rounded-[5px]">
+							<div class="w-[70%] px-[15px] py-[15px] border-r-[1px] border-r-black border-r-solid">AD (pcs.)</div>
+							<input type="number" x-model="W13" value="1" @change="if($el.value.length < 1 || $el.value < 1){$el.value = 1; W13 = 1}" class="outline-0 w-[30%] px-[10px] py-[15px]">
+						</div>
+						<div class="text-medium text-sable w-full flex border-[1px] border-sable border-solid mb-[10px] rounded-[5px]">
+							<div class="w-[70%] px-[15px] py-[15px] border-r-[1px] border-r-black border-r-solid">AB (pcs.)</div>
+							<input type="number" x-model="walls_AB" value="1" @change="if($el.value.length < 1 || $el.value < 1){$el.value = 1; walls_AB = 1}" class="outline-0 w-[30%] px-[10px] py-[15px]">
+						</div>
+						<div class="text-medium text-sable w-full flex border-[1px] border-sable border-solid mb-[10px] rounded-[5px]">
+							<div class="w-[70%] px-[15px] py-[15px] border-r-[1px] border-r-black border-r-solid">BC (pcs.)</div>
+							<input type="number" x-model="walls_BC" value="1" @change="if($el.value.length < 1 || $el.value < 1){$el.value = 1; walls_BC = 1}" class="outline-0 w-[30%] px-[10px] py-[15px]">
+						</div>
+						<div class="text-medium text-sable w-full flex border-[1px] border-sable border-solid mb-[10px] rounded-[5px]">
+							<div class="w-[70%] px-[15px] py-[15px] border-r-[1px] border-r-black border-r-solid">DC (pcs.)</div>
+							<input type="number" x-model="walls_DC" value="1" @change="if($el.value.length < 1 || $el.value < 1){$el.value = 1; walls_DC = 1}" class="outline-0 w-[30%] px-[10px] py-[15px]">
+						</div>
+						<div class="text-medium text-sable w-full flex border-[1px] border-sable border-solid mb-[10px] rounded-[5px]">
+							<div class="w-[70%] px-[15px] py-[15px] border-r-[1px] border-r-black border-r-solid">А А1 (pcs.)</div>
+							<input type="number" x-model="walls_A_A1" value="1" @change="if($el.value.length < 1 || $el.value < 1){$el.value = 1; walls_A_A1 = 1}" class="outline-0 w-[30%] px-[10px] py-[15px]">
+						</div>
+						<div class="text-medium text-sable w-full flex border-[1px] border-sable border-solid mb-[10px] rounded-[5px]">
+							<div class="w-[70%] px-[15px] py-[15px] border-r-[1px] border-r-black border-r-solid">А1 B (pcs.)</div>
+							<input type="number" x-model="walls_A1_B" value="1" @change="if($el.value.length < 1 || $el.value < 1){$el.value = 1; walls_A1_B = 1}" class="outline-0 w-[30%] px-[10px] py-[15px]">
+						</div>
+					</div>
+					<div class="basis-1/2 medium:basis-full px-[15px] middle:px-0">
+						<div class="mb-[15px]">
+							<p class="mb-[15px] text-medium text-sable">Result:</p>
+							<input type="text" :value="(((Number(Q6) * (Number(Q15) - Number(Q17))) * Q4) / 1000000000) + (((((((Number(Q8) - (Number(Q4) * (2 + Number(walls_AB) + Number(walls_DC)))) * (Number(walls_AB) + Number(walls_DC))) * Number(Q15))) + ((((Number(Q6) * 2)-(Number(Q4) * 2) + (Number(Q8) * 2)-(Number(Q4) * 2)) + ((Number(Q6) - (Number(Q4) * 2)) * (Number(walls_AB) + Number(walls_DC)))) * Number(Q17))) * Number(Q4)) / 1000000000)  + ' cubic meters.'" class="w-full outline-0 px-[10px] py-[15px] border-[1px] border-solid border-sable rounded-[5px]" readonly>
+						</div>
+						<div class="mb-[15px]">
+							<p class="mb-[15px] text-medium text-sable">Exterior walls:</p>
+							<input type="text" :value="((Number(Q6) * 2)-(Number(Q4) * 2) + (Number(Q8) * 2)-(Number(Q4) * 2)) + ' м.'" class="w-full outline-0 px-[10px] py-[15px] border-[1px] border-solid border-sable rounded-[5px]" readonly>
+						</div>
+						<div class="mb-[15px]">
+							<p class="mb-[15px] text-medium text-sable">Internal walls in width:</p>
+							<input type="text" :value="((Number(Q6) - (Number(Q4) * 2)) * (Number(walls_AB) + Number(walls_DC))) + ' м.'" class="w-full outline-0 px-[10px] py-[15px] border-[1px] border-solid border-sable rounded-[5px]" readonly>
+						</div>
+						<div class="mb-[15px]">
+							<p class="mb-[15px] text-medium text-sable">Internal walls along the length:</p>
+							<input type="text" :value="((Number(Q8) - (Number(Q4) * (2 + Number(walls_AB) + Number(walls_DC)))) * (Number(walls_AB) + Number(walls_DC))) + ' м.'" class="w-full outline-0 px-[10px] py-[15px] border-[1px] border-solid border-sable rounded-[5px]" readonly>
+						</div>
+						<div class="mb-[15px]">
+							<p class="mb-[15px] text-medium text-sable">Area of long walls:</p>
+							<input type="text" :value="((Number(Q8) - (Number(Q4) * (2 + Number(walls_AB) + Number(walls_DC)))) * (Number(walls_AB) + Number(walls_DC))) * Number(Q15) + ' square meters.'" class="w-full outline-0 px-[10px] py-[15px] border-[1px] border-solid border-sable rounded-[5px]" readonly>
+						</div>
+						<div class="mb-[15px]">
+							<p class="mb-[15px] text-medium text-sable">Box area without long walls:</p>
+							<input type="text" :value="(((Number(Q6) * 2)-(Number(Q4) * 2) + (Number(Q8) * 2)-(Number(Q4) * 2)) + ((Number(Q6) - (Number(Q4) * 2)) * (Number(walls_AB) + Number(walls_DC)))) * Number(Q17) + ' square meters.'" class="w-full outline-0 px-[10px] py-[15px] border-[1px] border-solid border-sable rounded-[5px]" readonly>
+						</div>
+						<div class="mb-[15px]">
+							<p class="mb-[15px] text-medium text-sable">Total area of the box:</p>
+							<input type="text" :value="( ((((Number(Q8) - (Number(Q4) * (2 + Number(walls_AB) + Number(walls_DC)))) * (Number(walls_AB) + Number(walls_DC))) * Number(Q15))) + ((((Number(Q6) * 2)-(Number(Q4) * 2) + (Number(Q8) * 2)-(Number(Q4) * 2)) + ((Number(Q6) - (Number(Q4) * 2)) * (Number(walls_AB) + Number(walls_DC)))) * Number(Q17))) * Number(Q4) + ' square meters.'" class="w-full outline-0 px-[10px] py-[15px] border-[1px] border-solid border-sable rounded-[5px]" readonly>
+						</div>
+						<div class="mb-[15px]">
+							<p class="mb-[15px] text-medium text-sable">Box volume:</p>
+							<input type="text" :value="((((((Number(Q8) - (Number(Q4) * (2 + Number(walls_AB) + Number(walls_DC)))) * (Number(walls_AB) + Number(walls_DC))) * Number(Q15))) + ((((Number(Q6) * 2)-(Number(Q4) * 2) + (Number(Q8) * 2)-(Number(Q4) * 2)) + ((Number(Q6) - (Number(Q4) * 2)) * (Number(walls_AB) + Number(walls_DC)))) * Number(Q17))) * Number(Q4)) / 1000000000 + ' cubic meters.'" class="w-full outline-0 px-[10px] py-[15px] border-[1px] border-solid border-sable rounded-[5px]" readonly>
+						</div>
+						<div class="mb-[15px]">
+							<p class="mb-[15px] text-medium text-sable">Ridge volume:</p>
+							<input type="text" :value="((Number(Q6) * (Number(Q15) - Number(Q17))) * Q4) / 1000000000 + ' cubic meters.'" class="w-full outline-0 px-[10px] py-[15px] border-[1px] border-solid border-sable rounded-[5px]" readonly>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="text" style="margin-top: 90px; margin-bottom: 60px">
+			<div class="container">
+				<div class="flex">
+					<div class="max-w-[760px] medium:max-w-[600px]">
+						<h2>Company's partners</h2>
+						<p>Key partners of "Arbolite Sth. Build"</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="partners">
+			<div class="container-fluid">
+				<div class="flex flex-wrap justify-center">
+					<a href="#" class="col col-4-1 mb-[20px]">
+						<img x-lazy="{url: './assets/img/p-1.jpg'}" alt="" />
+					</a>
+					<a href="#" class="col col-4-1 mb-[20px]">
+						<img x-lazy="{url: './assets/img/p-2.jpg'}" alt="" />
+					</a>
+					<a href="#" class="col col-4-1 mb-[20px]">
+						<img x-lazy="{url: './assets/img/p-3.jpg'}" alt="" />
+					</a>
+					<a href="#" class="col col-4-1 mb-[20px]">
+						<img x-lazy="{url: './assets/img/p-4.jpg'}" alt="" />
+					</a>
+					<a href="#" class="col col-4-1 mb-[20px]">
+						<img x-lazy="{url: './assets/img/p-5.jpg'}" alt="" />
+					</a>
+					<a href="#" class="col col-4-1 mb-[20px]">
+						<img x-lazy="{url: './assets/img/p-6.jpg'}" alt="" />
+					</a>
+					<a href="#" class="col col-4-1 mb-[20px]">
+						<img x-lazy="{url: './assets/img/p-7.jpg'}" alt="" />
+					</a>
+					<a href="#" class="col col-4-1 mb-[20px]">
+						<img x-lazy="{url: './assets/img/p-8.jpg'}" alt="" />
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<div class="container w-full h-[2px]" style="margin-top: 90px">
+			<span class="block bg-primary w-full h-full"></span>
+		</div>
+
+		<section
+			style="margin-top: 90px"
+			x-lazy="{type: 'background', url: './assets/img/arbolit-forma.jpg'}"
+			class="footer-block w-full h-[500px] bg-no-repeat bg-center bg-cover bg-scroll"
+		>
+			<div class="container">
+				<div class="flex">
+					<div class="max-w-[600px]">
+						<div class="text">
+							<h2>Prices for an arbolite house</h2>
+							<p>Use the form below and find out the cost of building a residential house from arbolite blocks</p>
+						</div>
+						<div class="mt-[70px] middle:mt-[35px] flex">
+							<button
+								type="button"
+								@click.prevent="openModal2 = true; popupOpen = true"
+								class="bg-primary text-white shadow-2lr rounded-[10px] font-semibold inline-block px-[60px] h-[60px] text-regular mr-[10px] mt-[8px] hover:bg-sable transition ease-in-out duration-200 regular:m-[5px] regular:ml-0 regular:px-[30px]"
+							>
+								<span class="h-full flex items-center">Check prices</span>
+							</button>
+							<div class="ml-[30px]">
+								<svg class="scale-x-[-1]" style="fill: #2b2b2b; width: 45px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 180">
+									<path
+										d="M54.1 108c-.5 0-.9-.2-1.2-.6-.5-.7-.3-1.6.4-2.1 1.5-1 9.5-5.5 14.6-8.3-17.4-.5-31.3-7.3-41.3-20C9.9 55.7 9.5 24.2 14.2 3.7c.2-.8 1-1.3 1.8-1.1.8.2 1.3 1 1.1 1.8-4.6 19.9-4.2 50.3 11.8 70.8 9.5 12.2 23 18.6 39.9 18.9h.3l-3.2-4c-1.4-1.7-2.7-3.3-4.1-5.1-.7-.9-1.5-1.9-2.3-2.9-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2 0 0 0 .1.1.1l6.4 7.9c.5.6.9 1.1 1.4 1.7 1.5 1.8 3.1 3.6 4.3 5.5 0 .1.1.1.1.2.1.2.1.3.2.5v.3c0 .2 0 .3-.1.5 0 .1-.1.1-.1.2-.1.2-.2.3-.3.4-.1.1-.2.1-.3.2 0 0-.1 0-.2.1-.9.4-16 8.6-18.2 10.1-.4 0-.7.1-1 .1z"
+									></path>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer bg-primary">
+			<div class="container">
+				<div class="flex flex-wrap medium:flex-col justify-between py-[120px]">
+					<div class="max-w-[360px]">
+						<a href="/" class="">
+							<img src="./assets/img/logo.svg" class="min-w-[270px]" alt="" />
+						</a>
+						<div class="mt-[40px] text-small text-sableness">
+							© Arbolite Sth. Build, 2021
+							<br />
+							<a href="#">Privacy Policy</a>
+							<br />
+							<br />
+							Developer of the site <a href="https://github.com/onovman/" class="text-white font-semibold">Alex Novman</a>
+						</div>
+					</div>
+					<div class="flex justify-between max-w-[360px] regular:flex-col">
+						<div class="my-[20px] max-w-[160px]">
+							<div class="font-roboto font-bold text-sable tracking-[1px] mb-[14px]">SECTIONS.</div>
+							<div>
+								<a href="#" class="text-white text-small font-medium mb-[10px] block">About arbolite</a>
+								<a href="#" class="text-white text-small font-medium mb-[10px] block">Construction</a>
+								<a href="#" class="text-white text-small font-medium mb-[10px] block">About the company</a>
+								<a href="#" class="text-white text-small font-medium mb-[10px] block">House designs</a>
+								<a href="#" class="text-white text-small font-medium mb-[10px] block">Contacts and addresses</a>
+							</div>
+						</div>
+						<div class="my-[20px] max-w-[160px]">
+							<div class="font-roboto font-bold text-sable tracking-[1px] mb-[14px]">CONTACTS</div>
+							<div>
+								<a href="#" class="text-white text-small font-medium mb-[10px] block">mail@arbolitesthbuild.us</a>
+								<a href="#" class="text-white text-small font-medium mb-[10px] block">daily 08-19</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
